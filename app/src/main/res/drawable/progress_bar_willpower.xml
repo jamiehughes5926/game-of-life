@@ -1,0 +1,19 @@
+<!-- res/drawable/capsule_progress.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- The background, potentially showing the unfilled portion -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="100dp" /> <!-- Use a large radius for semi-circles -->
+            <solid android:color="#BDBDBD" /> <!-- Background color for unfilled portion -->
+        </shape>
+    </item>
+    <!-- The progress portion -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="rectangle">
+                <corners android:radius="100dp" /> <!-- Match the radius to create semi-circles -->
+                <solid android:color="#FF5E4D" /> <!-- Progress color -->
+            </shape>
+        </clip>
+    </item>
+</layer-list>

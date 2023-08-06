@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Common Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="lightGray">#D3D3D3</color>
+
+    <!-- Light Theme Colors -->
+    <color name="primaryColorLight">#FFFFFF</color>
+    <color name="primaryDarkColorLight">#D3D3D3</color>
+    <color name="onPrimaryLight">#000000</color>
+    <color name="secondaryColorLight">#D3D3D3</color>
+    <color name="onSecondaryLight">#000000</color>
+    <color name="surfaceLight">#FFFFFF</color>
+    <color name="onSurfaceLight">#000000</color>
+
+    <!-- Dark Theme Colors -->
+    <color name="primaryColorDark">#000000</color>
+    <color name="primaryDarkColorDark">#121212</color>
+    <color name="onPrimaryDark">#FFFFFF</color>
+    <color name="secondaryColorDark">#121212</color>
+    <color name="onSecondaryDark">#FFFFFF</color>
+    <color name="surfaceDark">#000000</color>
+    <color name="onSurfaceDark">#FFFFFF</color>
+</resources>

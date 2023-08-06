@@ -1,0 +1,64 @@
+<!-- task_item.xml -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/taskNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Task Name"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/taskCategoryTextView"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <TextView
+        android:id="@+id/taskCategoryTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/taskNameTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/taskTimeTextView"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <TextView
+        android:id="@+id/taskTimeTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Time Length"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/taskCategoryTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/taskExpTextView"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <TextView
+        android:id="@+id/taskExpTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="EXP"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/taskTimeTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/completeButton"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <Button
+        android:id="@+id/completeButton"
+        android:layout_width="70dp"
+        android:textSize="10sp"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="Button for completing task"
+        android:textColor="@color/primaryColorDark"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

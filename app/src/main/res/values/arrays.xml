@@ -1,0 +1,12 @@
+<resources>
+    <string-array name="choice_entries">
+        <item>Option 1</item>
+        <item>Option 2</item>
+        <item>Option 3</item>
+    </string-array>
+    <string-array name="choice_entry_values">
+        <item>option1</item>
+        <item>option2</item>
+        <item>option3</item>
+    </string-array>
+</resources>

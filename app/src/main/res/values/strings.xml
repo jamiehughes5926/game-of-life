@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GameofLifev2</string>
+    <string-array name="stat_categories">
+        <item>Strength</item>
+        <item>IQ</item>
+        <item>Luck</item>
+        <item>Stamina</item>
+        <item>Willpower</item>
+    </string-array>
+
+</resources>

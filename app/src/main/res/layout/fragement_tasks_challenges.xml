@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/taskRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/taskNameEditText" />
+
+    <!-- Task Name EditText -->
+    <EditText
+        android:id="@+id/taskNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Task Name"
+        android:contentDescription="Input for task name" />
+
+    <!-- Stat Category Spinner -->
+    <Spinner
+        android:id="@+id/statCategorySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:contentDescription="Spinner for selecting stat category" />
+
+    <!-- Time Length EditText -->
+    <EditText
+        android:id="@+id/timeLengthEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Time Length"
+        android:inputType="number"
+        android:contentDescription="Input for time length" />
+
+    <!-- Create Task Button -->
+    <Button
+        android:id="@+id/createTaskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Task"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="Button for creating task"
+        android:textColor="@color/primaryColorDark"/>
+
+
+
+</LinearLayout>

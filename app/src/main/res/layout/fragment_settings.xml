@@ -1,0 +1,43 @@
+<!-- fragment_settings.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ... other elements ... -->
+    <EditText
+        android:id="@+id/editTextNewName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter new name"/>
+
+    <Button
+        android:id="@+id/buttonChangeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Name"
+        android:layout_below="@id/editTextNewName"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/primaryColorDark"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Switch
+        android:id="@+id/notificationSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable Notifications"
+        android:layout_below="@id/buttonChangeName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Theme Switch -->
+    <Switch
+        android:id="@+id/themeSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable Dark Mode"
+        android:layout_below="@id/notificationSwitch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

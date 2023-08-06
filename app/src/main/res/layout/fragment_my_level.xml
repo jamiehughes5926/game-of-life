@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/levelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LEVEL"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:paddingBottom="4dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginBottom="16dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            >
+
+            <!-- Circular Progress Bar -->
+            <ProgressBar
+                android:id="@+id/xpCircleProgressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:indeterminate="false"
+                android:progressDrawable="@drawable/circular_progress_bar"
+                android:background="@drawable/circular_progress_bar_background"
+                android:layout_centerInParent="true"
+                android:max="100"
+                android:progress="65"
+                android:rotation="-90" />
+
+            <!-- XP TextView to display in the middle of the circle -->
+            <TextView
+                android:id="@+id/xpTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="XP"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="4dp">
+
+            <ProgressBar
+                android:id="@+id/strengthProgressBar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:indeterminate="false"
+                android:progressDrawable="@drawable/progress_bar_strength"
+                android:max="100"
+                android:progress="100"
+                android:rotation="180" />
+
+            <TextView
+                android:id="@+id/strengthTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="50"
+                android:textSize="18sp"
+                android:textColor="@color/black" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="4dp">
+
+            <ProgressBar
+                android:id="@+id/iqProgressBar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:indeterminate="false"
+                android:progressDrawable="@drawable/progress_bar_iq"
+                android:max="100"
+                android:progress="100"
+                android:rotation="180" />
+
+            <TextView
+                android:id="@+id/iqTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="50"
+                android:textSize="18sp"
+                android:textColor="@color/black" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="4dp">
+
+            <ProgressBar
+                android:id="@+id/luckProgressBar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:indeterminate="false"
+                android:progressDrawable="@drawable/progress_bar_luck"
+                android:max="100"
+                android:progress="100"
+                android:rotation="180" />
+
+            <TextView
+                android:id="@+id/luckTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="50"
+                android:textSize="18sp"
+                android:textColor="@color/black" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="4dp">
+
+            <ProgressBar
+                android:id="@+id/staminaProgressBar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:indeterminate="false"
+                android:progressDrawable="@drawable/progress_bar_stamina"
+                android:max="100"
+                android:progress="100"
+                android:rotation="180" />
+
+            <TextView
+                android:id="@+id/staminaTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="50"
+                android:textSize="18sp"
+                android:textColor="@color/black" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="4dp">
+
+            <ProgressBar
+                android:id="@+id/willpowerProgressBar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:indeterminate="false"
+                android:progressDrawable="@drawable/progress_bar_willpower"
+                android:max="100"
+                android:progress="100"
+                android:rotation="180" />
+
+            <TextView
+                android:id="@+id/willpowerTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="50"
+                android:textSize="18sp"
+                android:textColor="@color/black" />
+        </FrameLayout>
+
+<!--        <Button-->
+<!--            android:id="@+id/levelUpButton"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Level Up"-->
+<!--            android:textColor="@color/primaryColorDark"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginTop="16dp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/expTextView"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="EXP"-->
+<!--            android:textSize="24sp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginTop="16dp"/>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/resetLevelButton"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Reset Level"-->
+<!--            android:textColor="@color/primaryColorDark"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginTop="16dp" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/addExpButton"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Add EXP"-->
+<!--            android:textColor="@color/primaryColorDark"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginTop="16dp" />-->
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,37 @@
+<!-- challenge_item.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/challengeNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Challenge Name"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/challengeCategoryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/challengeXPTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XP"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/completeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Complete"
+        android:layout_gravity="end"
+        android:contentDescription="Button for completing challenge"
+        android:textColor="@color/primaryColorDark"/>
+</LinearLayout>

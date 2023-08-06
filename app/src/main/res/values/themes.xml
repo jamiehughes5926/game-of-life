@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Light Theme -->
+    <style name="Theme.GameofLifev2.Light" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primaryColorLight</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColorLight</item>
+        <item name="android:textColorPrimary">@color/onPrimaryLight</item>
+        <item name="android:textColorSecondary">@color/onSecondaryLight</item>
+        <item name="android:windowBackground">@color/surfaceLight</item>
+        <!-- Other light theme attributes -->
+    </style>
+
+    <!-- Dark Theme -->
+    <style name="Theme.GameofLifev2.Dark" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/primaryColorDark</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColorDark</item>
+        <item name="android:textColorPrimary">@color/onPrimaryDark</item>
+        <item name="android:textColorSecondary">@color/onSecondaryDark</item>
+        <item name="android:windowBackground">@color/surfaceDark</item>
+        <!-- Other dark theme attributes -->
+    </style>
+</resources>

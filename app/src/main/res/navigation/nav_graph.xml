@@ -1,0 +1,43 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment"
+    app:itemRippleColor="@color/white">
+
+
+
+
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.jamiehughes.gameoflifev2.HomeFragment"
+        android:label="Home"
+        >
+        <action
+            android:id="@+id/action_homeFragment_to_levelFragment"
+            app:destination="@id/levelFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/levelFragment"
+        android:name="com.jamiehughes.gameoflifev2.MyLevelFragment"
+        android:label="Level">
+        <!-- Add actions here if necessary -->
+    </fragment>
+
+    <fragment
+        android:id="@+id/TasksChallengesFragment"
+        android:name="com.jamiehughes.gameoflifev2.TaskChallengesFragment"
+        android:label="Tasks">
+        <!-- Add actions here if necessary -->
+    </fragment>
+
+    <fragment
+        android:id="@+id/SettingsFragment"
+        android:name="com.jamiehughes.gameoflifev2.SettingsFragment"
+        android:label="Setting">
+        <!-- Add actions here if necessary -->
+    </fragment>
+
+</navigation>
